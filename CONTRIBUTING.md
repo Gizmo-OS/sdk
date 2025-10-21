@@ -55,12 +55,12 @@ $ cd sdk
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link gizmo-sdk
+$ yarn link @gizmo-os/sdk
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global gizmo-sdk
+$ pnpm link -—global @gizmo-os/sdk
 ```
 
 ## Running tests

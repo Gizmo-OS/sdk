@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'gizmo-sdk/internal/to-file';
-import { toFile } from 'gizmo-sdk/core/uploads';
+import type { ResponseLike } from '@gizmo-os/sdk/internal/to-file';
+import { toFile } from '@gizmo-os/sdk/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('gizmo-sdk/core/uploads');
+    const uploads = await import('@gizmo-os/sdk/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

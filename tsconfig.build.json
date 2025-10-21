@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "gizmo-sdk/*": ["./dist/src/*"],
-      "gizmo-sdk": ["./dist/src/index.ts"]
+      "@gizmo-os/sdk/*": ["./dist/src/*"],
+      "@gizmo-os/sdk": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

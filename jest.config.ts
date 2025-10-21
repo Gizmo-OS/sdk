@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^gizmo-sdk$': '<rootDir>/src/index.ts',
-    '^gizmo-sdk/(.*)$': '<rootDir>/src/$1',
+    '^@gizmo-os/sdk$': '<rootDir>/src/index.ts',
+    '^@gizmo-os/sdk/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

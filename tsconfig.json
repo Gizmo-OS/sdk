@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "gizmo-sdk/*": ["./src/*"],
-      "gizmo-sdk": ["./src/index.ts"]
+      "@gizmo-os/sdk/*": ["./src/*"],
+      "@gizmo-os/sdk": ["./src/index.ts"]
     },
     "noEmit": true,
 
