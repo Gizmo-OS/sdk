@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import GizmoSDK from '@gizmo-os/sdk';
+import Gizmo from '@gizmo-os/sdk';
 
-const client = new GizmoSDK({
+const client = new Gizmo({
   apiKey: 'My API Key',
   baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
 });
@@ -95,6 +95,6 @@ describe('resource applications', () => {
         },
         { path: '/_stainless_unknown_path' },
       ),
-    ).rejects.toThrow(GizmoSDK.NotFoundError);
+    ).rejects.toThrow(Gizmo.NotFoundError);
   });
 });
