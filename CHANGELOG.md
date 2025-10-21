@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 (2025-10-21)
+
+Full Changelog: [v1.0.0...v1.0.1](https://github.com/Gizmo-OS/sdk/compare/v1.0.0...v1.0.1)
+
+### Chores
+
+* update SDK settings ([3864d83](https://github.com/Gizmo-OS/sdk/commit/3864d83b8035ea45a6c63b5f324b62828715b3d7))
+
 ## 1.0.0 (2025-10-21)
 
 Full Changelog: [v0.0.1...v1.0.0](https://github.com/Gizmo-OS/sdk/compare/v0.0.1...v1.0.0)
