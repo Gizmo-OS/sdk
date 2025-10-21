@@ -1,6 +1,6 @@
 {
-  "name": "gizmo-sdk",
-  "version": "1.0.0",
+  "name": "@gizmo-os/sdk",
+  "version": "1.0.1",
   "description": "The official TypeScript library for the Gizmo SDK API",
   "author": "Gizmo SDK <>",
   "types": "dist/index.d.ts",

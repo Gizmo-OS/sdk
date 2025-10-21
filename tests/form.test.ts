@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'gizmo-sdk/internal/uploads';
-import { toFile } from 'gizmo-sdk/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@gizmo-os/sdk/internal/uploads';
+import { toFile } from '@gizmo-os/sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
