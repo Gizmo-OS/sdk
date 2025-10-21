@@ -1,8 +1,8 @@
 {
   "name": "@gizmo-os/sdk",
   "version": "1.0.1",
-  "description": "The official TypeScript library for the Gizmo SDK API",
-  "author": "Gizmo SDK <>",
+  "description": "The official TypeScript library for the Gizmo API",
+  "author": "Gizmo <jake@usegizmo.com>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
