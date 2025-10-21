@@ -42,7 +42,7 @@ import { isEmptyObj } from './internal/utils/values';
 
 export interface ClientOptions {
   /**
-   * Defaults to process.env['GIZMO_SDK_API_KEY'].
+   * Defaults to process.env['GIZMO_API_KEY'].
    */
   apiKey?: string | undefined;
 
@@ -136,7 +136,7 @@ export class Gizmo {
   /**
    * API Client for interfacing with the Gizmo API.
    *
-   * @param {string | undefined} [opts.apiKey=process.env['GIZMO_SDK_API_KEY'] ?? undefined]
+   * @param {string | undefined} [opts.apiKey=process.env['GIZMO_API_KEY'] ?? undefined]
    * @param {string} [opts.baseURL=process.env['GIZMO_BASE_URL'] ?? https://core.usegizmo.com/v1] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
@@ -147,12 +147,12 @@ export class Gizmo {
    */
   constructor({
     baseURL = readEnv('GIZMO_BASE_URL'),
-    apiKey = readEnv('GIZMO_SDK_API_KEY'),
+    apiKey = readEnv('GIZMO_API_KEY'),
     ...opts
   }: ClientOptions = {}) {
     if (apiKey === undefined) {
       throw new Errors.GizmoError(
-        "The GIZMO_SDK_API_KEY environment variable is missing or empty; either provide it, or instantiate the Gizmo client with an apiKey option, like new Gizmo({ apiKey: 'My API Key' }).",
+        "The GIZMO_API_KEY environment variable is missing or empty; either provide it, or instantiate the Gizmo client with an apiKey option, like new Gizmo({ apiKey: 'My API Key' }).",
       );
     }
 
