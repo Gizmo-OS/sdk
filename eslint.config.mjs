@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^gizmo-sdk(/.*)?',
+              regex: '^@gizmo-os/sdk(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

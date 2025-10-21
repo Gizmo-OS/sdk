@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { GizmoSDK } from 'gizmo-sdk';
+import { GizmoSDK } from '@gizmo-os/sdk';
 
 const { stringifyQuery } = GizmoSDK.prototype as any;
 

@@ -1,5 +1,5 @@
 {
-  "name": "gizmo-sdk",
+  "name": "@gizmo-os/sdk",
   "version": "1.0.0",
   "description": "The official TypeScript library for the Gizmo SDK API",
   "author": "Gizmo SDK <>",

@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'gizmo-sdk/core/api-promise';
+import { APIPromise } from '@gizmo-os/sdk/core/api-promise';
 
 import util from 'node:util';
-import GizmoSDK from 'gizmo-sdk';
-import { APIUserAbortError } from 'gizmo-sdk';
+import GizmoSDK from '@gizmo-os/sdk';
+import { APIUserAbortError } from '@gizmo-os/sdk';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {
