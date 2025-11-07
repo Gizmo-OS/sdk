@@ -44,6 +44,7 @@ describe('resource applications', () => {
       subjectPropertyCity: 'subjectPropertyCity',
       subjectPropertyStreetAddress: 'subjectPropertyStreetAddress',
       subjectPropertyZip: 'subjectPropertyZip',
+      teamId: 'teamId',
     });
   });
 
@@ -92,6 +93,7 @@ describe('resource applications', () => {
           subjectPropertyState: 'al',
           subjectPropertyStreetAddress: 'subjectPropertyStreetAddress',
           subjectPropertyZip: 'subjectPropertyZip',
+          teamId: 'teamId',
         },
         { path: '/_stainless_unknown_path' },
       ),
