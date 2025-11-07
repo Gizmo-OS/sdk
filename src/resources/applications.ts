@@ -156,6 +156,8 @@ export interface ApplicationRetrieveResponse {
 
   subjectPropertyZip?: string;
 
+  teamId?: string;
+
   updatedAt?: number;
 }
 
@@ -192,6 +194,8 @@ export interface ApplicationCreateParams {
   subjectPropertyStreetAddress?: string;
 
   subjectPropertyZip?: string;
+
+  teamId?: string;
 }
 
 export interface ApplicationUpdateParams {
@@ -225,6 +229,8 @@ export interface ApplicationUpdateParams {
   subjectPropertyStreetAddress?: string;
 
   subjectPropertyZip?: string;
+
+  teamId?: string;
 }
 
 export declare namespace Applications {
