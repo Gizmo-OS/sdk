@@ -25,7 +25,7 @@ export class Applications extends APIResource {
    */
   update(
     id: string,
-    body: ApplicationUpdateParams | null | undefined = {},
+    body: ApplicationUpdateParams,
     options?: RequestOptions,
   ): APIPromise<ApplicationUpdateResponse> {
     return this._client.patch(path`/applications/${id}`, { body, ...options });
