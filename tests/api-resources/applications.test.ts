@@ -62,7 +62,7 @@ describe('resource applications', () => {
 
   // Mock server tests are disabled
   test.skip('update', async () => {
-    const responsePromise = client.applications.update('id');
+    const responsePromise = client.applications.update('id', {});
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -70,33 +70,5 @@ describe('resource applications', () => {
     const dataAndResponse = await responsePromise.withResponse();
     expect(dataAndResponse.data).toBe(response);
     expect(dataAndResponse.response).toBe(rawResponse);
-  });
-
-  // Mock server tests are disabled
-  test.skip('update: request options and params are passed correctly', async () => {
-    // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
-    await expect(
-      client.applications.update(
-        'id',
-        {
-          crmId: 'crmId',
-          loanPurpose: 'purchase',
-          losId: 'losId',
-          primaryBorrowerDateOfBirth: 'primaryBorrowerDateOfBirth',
-          primaryBorrowerEmail: 'primaryBorrowerEmail',
-          primaryBorrowerFirstName: 'primaryBorrowerFirstName',
-          primaryBorrowerLastName: 'primaryBorrowerLastName',
-          primaryBorrowerPhone: 'primaryBorrowerPhone',
-          primaryBorrowerSsn: 'primaryBorrowerSsn',
-          status: 'NEW',
-          subjectPropertyCity: 'subjectPropertyCity',
-          subjectPropertyState: 'al',
-          subjectPropertyStreetAddress: 'subjectPropertyStreetAddress',
-          subjectPropertyZip: 'subjectPropertyZip',
-          teamId: 'teamId',
-        },
-        { path: '/_stainless_unknown_path' },
-      ),
-    ).rejects.toThrow(Gizmo.NotFoundError);
   });
 });
