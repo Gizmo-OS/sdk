@@ -23,7 +23,7 @@ The full API of this library can be found in [api.md](api.md).
 import Gizmo from '@gizmo-os/sdk';
 
 const client = new Gizmo({
-  apiKey: process.env['GIZMO_SDK_API_KEY'], // This is the default and can be omitted
+  apiKey: process.env['GIZMO_API_KEY'], // This is the default and can be omitted
 });
 
 const application = await client.applications.retrieve('REPLACE_ME');
@@ -40,10 +40,12 @@ This library includes TypeScript definitions for all request params and response
 import Gizmo from '@gizmo-os/sdk';
 
 const client = new Gizmo({
-  apiKey: process.env['GIZMO_SDK_API_KEY'], // This is the default and can be omitted
+  apiKey: process.env['GIZMO_API_KEY'], // This is the default and can be omitted
 });
 
-const application: Gizmo.ApplicationRetrieveResponse = await client.applications.retrieve('REPLACE_ME');
+const application: Gizmo.ApplicationRetrieveResponse = await client.applications.retrieve(
+  'REPLACE_ME',
+);
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
@@ -140,7 +142,9 @@ const response = await client.applications.retrieve('REPLACE_ME').asResponse();
 console.log(response.headers.get('X-My-Header'));
 console.log(response.statusText); // access the underlying Response object
 
-const { data: application, response: raw } = await client.applications.retrieve('REPLACE_ME').withResponse();
+const { data: application, response: raw } = await client.applications
+  .retrieve('REPLACE_ME')
+  .withResponse();
 console.log(raw.headers.get('X-My-Header'));
 console.log(application.id);
 ```

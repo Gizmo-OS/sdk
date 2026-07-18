@@ -1,4 +1,4 @@
 configured_endpoints: 3
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/gizmo%2Fgizmo-sdk-ac79be0938dc6b0e0c6b9749202101215622d3e094ed31db21331d1219a22cbf.yml
-openapi_spec_hash: 31d8810c156bd17c9cff0fbdff44a4d9
-config_hash: c1448dd041e588a944060ab56eca5e3b
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/gizmo/gizmo-sdk-0c58b0272a01d31b993243258fc9249c249cf730c225698b7cccea6b194c252c.yml
+openapi_spec_hash: b39a1d03c66e366201bbf3602274eafb
+config_hash: a09872db6b88d743bfe41aa1a09619d5
